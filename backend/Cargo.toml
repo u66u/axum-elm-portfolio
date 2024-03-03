@@ -1,0 +1,40 @@
+[package]
+name = "backend"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+path = "src/main.rs"
+name = "backend"
+
+[dependencies]
+axum = "0.5"
+hyper = { version = "0.14", features = ["full"] }
+tokio = { version = "1", features = ["full"] }
+tower = "0.4"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+serde = { version = "1", features = ["derive"]}
+serde_json = "1.0"
+tower-http = { version = "0.3", features = ["cors"] }
+config = "0.11.0"
+chrono = { version = "0.4.34", features = ["serde"] }
+dotenv = "0.15.0"
+
+[dependencies.sqlx]
+version = "0.6"
+default-features = false
+features = [
+    "runtime-tokio-native-tls",
+    "macros",
+    "postgres",
+    "chrono",
+    "uuid",
+    "migrate",
+    "offline"
+]
