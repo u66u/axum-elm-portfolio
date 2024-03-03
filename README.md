@@ -12,8 +12,8 @@ To get started with the app, you can either run it manually or use one of the pr
 
 To run the app using a start script, navigate to the project directory and run one of the following commands:
 
-* `./scripts/start.sh` - This will start the app in development mode, using a local Postgres database.
-* `./scripts/start-docker.sh` - This will start the app in a Docker container, using a Postgres database running in a separate container.
+* `./backend/scripts/start.sh` - This will start the app in development mode, using a local Postgres database.
+* `./backend/scripts/start-docker.sh` - This will start the app in a Docker container, using a Postgres database running in a separate container.
 
 App Functionality
 -----------------
