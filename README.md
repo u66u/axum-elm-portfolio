@@ -3,6 +3,9 @@ Crud App Portfolio
 
 This is a portfolio project that demonstrates a CRUD (Create, Read, Update, Delete) app built using Elm and Axum, with a Postgres database and psql. The app also includes a blog.
 
+![Preview 1](preview/preview1.png)
+![Preview 2](preview/preview2.png)
+
 Getting Started
 ---------------
 
